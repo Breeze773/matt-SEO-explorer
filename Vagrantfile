@@ -90,10 +90,10 @@ end
 #shell.inline = 'xhost +'
 #end
 
-#config.vm.provision :shell do |shell|
-#shell.inline = 'firefox'
-#end
-#
+config.vm.provision :shell do |shell|
+shell.inline = '/vagrant/scripts/firefox-launch.sh'
+end
+
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
   # path, and data_bags path (all relative to this Vagrantfile), and adding
